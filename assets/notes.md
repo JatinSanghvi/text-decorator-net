@@ -1,6 +1,6 @@
 ## Capturing Readme Sample Screenshots
 
-- Run `TextFormatter.Test.Readme` project inside the console application.
+- Run `TextDecorator.Test.Readme` project inside the console application.
 - Set the console font to `Cascadia Mono PL` and font-size to `36`.
 - Capture rectangular region of the text output with FastStone image viewer.
 - Each line in the console should amount to 36 pixels vertically.
@@ -34,11 +34,8 @@
 
 ## Updating Logo Image
 
-- Modify the logo image inside document `logo.docx`.
-- Copy the image.
-- Create new project in Paint.NET.
-- The image dimensions will be set automatically to match the copied image.
-- Paste the image.
-- Reduce canvas size to 1760x1760 pixels.
-- Resize the image to 256x256 pixels.
-- Save the file with name `logo.png` in `img` directory.
+- Open `assets/logo.docx` and zoom in to 300%.
+- Modify the light and dark logo images.
+- Copy 276x276 pixel areas in FastStone Image Viewer.
+- Crop the images to 256x256 pixels.
+- Save the images in files `img/logo-light.png` and `img/logo-dark.png`.

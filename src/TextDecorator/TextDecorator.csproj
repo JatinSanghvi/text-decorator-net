@@ -3,8 +3,8 @@
   <PropertyGroup>
     <!-- Assembly -->
     <OutputType>Library</OutputType>
-    <RootNamespace>JatinSanghvi.TextFormatter</RootNamespace>
-    <AssemblyName>JatinSanghvi.TextFormatter</AssemblyName>
+    <RootNamespace>JatinSanghvi.TextDecorator</RootNamespace>
+    <AssemblyName>JatinSanghvi.TextDecorator</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
     
     <!-- Source Code  -->

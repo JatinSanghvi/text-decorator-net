@@ -2,9 +2,9 @@
 // Copyright (c) Jatin Sanghvi. All rights reserved.
 // -------------------------------------------------
 
-using JatinSanghvi.TextFormatter;
+using JatinSanghvi.TextDecorator;
 
-_ = TextFormatter.Activate();
+_ = TextDecorator.Activate();
 
 Console.WriteLine("Once in a green forest, a curious fox explored.".BrightRed());
 Console.WriteLine("Lost and afraid, he sought a way back.".Green());
@@ -26,9 +26,18 @@ Console.WriteLine("With the owl's wisdom, he thrived.".Italic());
 Console.WriteLine("The fox embraced nature's harmony.".Underline());
 Console.WriteLine();
 
+// String interpolation.
 Console.WriteLine("In the {0}, he found {1}.", "green forest".BgGreen(), "belonging".BgBlue());
-Console.WriteLine($"His heart {"danced".Inverse()}, {"free and content".Italic().Underline()}.".Red());
 
-string who = "the curious fox".Bold().DoubleUnderline();
-Console.WriteLine($"Forever, {who} thrived.".Blink());
+// String variables.
+string action = "danced".Inverse();
+Console.WriteLine($"His heart {action} and {action}.".Cyan());
+
+// Composite decoration method.
+static string highlight(string text)
+{
+    return text.Bold().Italic().Underline().Blink();
+}
+
+Console.WriteLine($"Forever, the {highlight("curious")} fox {highlight("thrived")}.".Yellow());
 Console.WriteLine();

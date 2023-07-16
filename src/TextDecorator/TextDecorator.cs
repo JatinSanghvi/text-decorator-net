@@ -5,26 +5,26 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace JatinSanghvi.TextFormatter;
+namespace JatinSanghvi.TextDecorator;
 
-public static class TextFormatter
+public static class TextDecorator
 {
-    private static bool IsFormattingEnabled;
+    private static bool IsEnabled;
 
     /// <summary>
-    /// Activates text formatting. The method should be called before the printing formatted text.
+    /// Activates text decoration. The method should be called before the printing decorated text.
     /// </summary>
     /// <param name="enableErrorLogging">Log error messages to console.</param>
     /// <returns>True if initialization is successful; false otherwise.</returns>
     public static bool Activate(bool enableErrorLogging = false)
     {
-        IsFormattingEnabled =
+        IsEnabled =
             RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
             && !Console.IsOutputRedirected
             && string.IsNullOrEmpty(Environment.GetEnvironmentVariable("NO_COLOR")) // https://no-color.org/
             && PlatformWindows.SetConsoleOutputVirtualTerminalProcessing(enableErrorLogging);
 
-        return IsFormattingEnabled;
+        return IsEnabled;
     }
 
     // ANSI SGR Escape Codes:
@@ -164,7 +164,7 @@ public static class TextFormatter
 
     private static string WithAnsiCode(this string text, string beginCode, string endCode)
     {
-        return IsFormattingEnabled
+        return IsEnabled
             ? "\x1b[" + beginCode + "m" + text + "\x1b[" + endCode + "m"
             : text;
     }

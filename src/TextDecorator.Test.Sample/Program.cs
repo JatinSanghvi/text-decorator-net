@@ -2,9 +2,9 @@
 // Copyright (c) Jatin Sanghvi. All rights reserved.
 // -------------------------------------------------
 
-using JatinSanghvi.TextFormatter;
+using JatinSanghvi.TextDecorator;
 
-_ = TextFormatter.Activate();
+_ = TextDecorator.Activate();
 
 WriteHeading("Foreground Colors");
 

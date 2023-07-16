@@ -3,8 +3,8 @@
   <PropertyGroup>
     <!-- Assembly -->
     <OutputType>Exe</OutputType>
-    <RootNamespace>JatinSanghvi.TextFormatter.Test.Sample</RootNamespace>
-    <AssemblyName>JatinSanghvi.TextFormatter.Test.Sample</AssemblyName>
+    <RootNamespace>JatinSanghvi.TextDecorator.Test.Sample</RootNamespace>
+    <AssemblyName>JatinSanghvi.TextDecorator.Test.Sample</AssemblyName>
     <TargetFramework>net6.0</TargetFramework>
 
     <!-- Source Code  -->
@@ -33,6 +33,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TextFormatter\TextFormatter.csproj" />
+    <ProjectReference Include="..\TextDecorator\TextDecorator.csproj" />
   </ItemGroup>
 </Project>

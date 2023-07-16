@@ -5,7 +5,7 @@
 using System.ComponentModel;
 using System.Drawing;
 
-namespace JatinSanghvi.TextFormatter;
+namespace JatinSanghvi.TextDecorator;
 
 // Class ColorTranslator is not available for library targetting .NET Standard 2.0, hence copying the implementation
 // from https://referencesource.microsoft.com/#System.Drawing/commonui/System/Drawing/Advanced/ColorTranslator.cs.
