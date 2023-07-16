@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Assembly -->
+    <OutputType>Library</OutputType>
+    <RootNamespace>JatinSanghvi.TextDecorator</RootNamespace>
+    <AssemblyName>JatinSanghvi.TextDecorator</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <!--
+      NuGet Package (see:
+        https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices#package-metadata,
+        https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets#pack-target)
+    -->
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Jatin Sanghvi</Authors>
+    <Title>Text Decorator for .NET</Title>
+    <Description>Color and style your text on console.</Description>
+    <Copyright>Copyright (c) Jatin Sanghvi. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/JatinSanghvi/text-decorator-net/</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/JatinSanghvi/text-decorator-net.git</RepositoryUrl>
+    <PackageTags>Text Console Color Style Foreground Background Bold Italic Underline Strikethrough Blink</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- Use Source Link (see https://devblogs.microsoft.com/dotnet/producing-packages-with-source-link/) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- Produce deterministic assembly (see https://devblogs.microsoft.com/dotnet/producing-packages-with-source-link/) -->
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\images\icon-light.png" Pack="true" Visible="false" PackagePath="icon.png" />
+    <None Include="..\..\README.md" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

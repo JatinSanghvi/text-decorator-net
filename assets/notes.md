@@ -16,11 +16,11 @@
 - For light theme, set background color to white and shadow color to black.
 - For dark theme, set background color to `rgb(13,17,23)` and shadow color to `rgb(34,39,46)`
 - For light theme, set the file name to `*-light` and for dark one, set it to `*-dark`.
-- Make sure the output folder is set to `img` and the output format is set to PNG.
+- Make sure the output folder is set to `images` and the output format is set to PNG.
 - For the blinking text screenshots, use [https://ezgif.com/maker]().
 - Upload images for bright and dim text, with bright one first in the list.
 - Set per-frame duration to 100 and select 'use global map' option.
-- Download the generated gif file to `img` directory.
+- Download the generated gif file to `images` directory.
 - Do the same for dark theme screenshots.
 
 ## Updating Logo Image
@@ -29,4 +29,8 @@
 - Modify the light and dark logo images.
 - Copy 276x276 pixel areas in FastStone Image Viewer.
 - Crop the images to 256x256 pixels.
-- Save the images in files `img/logo-light.png` and `img/logo-dark.png`.
+- Save the images in files `images/logo-light.png` and `images/logo-dark.png`.
+
+## Creating NuGet Package
+
+- `dotnet pack .\source\TextDecorator --no-build --configuration Release --include-symbols`

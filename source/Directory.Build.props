@@ -1,22 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project>
 
   <PropertyGroup>
-    <!-- Assembly -->
-    <OutputType>Library</OutputType>
-    <RootNamespace>JatinSanghvi.TextDecorator</RootNamespace>
-    <AssemblyName>JatinSanghvi.TextDecorator</AssemblyName>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    
     <!-- Source Code  -->
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Deterministic>true</Deterministic>
 
     <!--
-      Code Analysis: https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#code-analysis-properties.
+      Code Analysis (see: https://learn.microsoft.com/dotnet/core/project-sdk/msbuild-props#code-analysis-properties).
       The combination of 'AnalysisMode' and 'AnalysisMode<Category>' did not work as expected, hence specifying all
       categories.
     -->
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <AnalysisModeDesign>All</AnalysisModeDesign>
     <AnalysisModeDocumentation>All</AnalysisModeDocumentation>
@@ -32,7 +28,4 @@
     <AnalysisModeUsage>All</AnalysisModeUsage>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Collections" Version="4.3.0" />
-  </ItemGroup>
 </Project>

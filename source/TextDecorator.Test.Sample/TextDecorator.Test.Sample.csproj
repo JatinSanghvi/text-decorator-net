@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Assembly -->
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JatinSanghvi.TextDecorator.Test.Sample</RootNamespace>
+    <AssemblyName>JatinSanghvi.TextDecorator.Test.Sample</AssemblyName>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TextDecorator\TextDecorator.csproj" />
+  </ItemGroup>
+</Project>

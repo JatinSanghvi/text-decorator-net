@@ -2,12 +2,16 @@
 
 <div align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="img/logo-dark.png">
-        <source media="(prefers-color-scheme: light)" srcset="img/logo-light.png">
-        <img alt="Text Decorator for .NET logo" src="img/logo-light.png">
+        <source media="(prefers-color-scheme: dark)" srcset="images/logo-dark.png" />
+        <source media="(prefers-color-scheme: light)" srcset="images/logo-light.png" />
+        <img alt="Text Decorator for .NET logo" src="images/logo-light.png" />
     </picture>
     <p>An elegant way to color and style text in your console applications.</p>
 </div>
+
+## NuGet Package
+
+[JatinSanghvi.TextDecorator](https://www.nuget.org/packages/JatinSanghvi.TextDecorator)
 
 ## Text Colors
 
@@ -21,9 +25,9 @@ Console.WriteLine("Lost and afraid, he sought a way back.".Green());
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/1-fg-methods-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="img/1-fg-methods-light.png">
-    <img alt="Foreground Color Methods" src="img/1-fg-methods-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="images/1-fg-methods-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="images/1-fg-methods-light.png" />
+    <img alt="Foreground Color Methods" src="images/1-fg-methods-light.png" />
 </picture>
 
 The following are the different methods supported for setting the text color along with the corresponding `ConsoleColor` enum members.
@@ -55,9 +59,9 @@ Console.WriteLine("Encountered friendly creatures who helped.".Color(ConsoleColo
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/2-fg-consolecolor-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="img/2-fg-consolecolor-light.png">
-    <img alt="Foreground ConsoleColor" src="img/2-fg-consolecolor-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="images/2-fg-consolecolor-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="images/2-fg-consolecolor-light.png" />
+    <img alt="Foreground ConsoleColor" src="images/2-fg-consolecolor-light.png" />
 </picture>
 
 ## Text Background Colors
@@ -68,9 +72,9 @@ Console.WriteLine("Adventures and challenges became life.".BgBrightWhite().Black
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/3-bg-methods-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="img/3-bg-methods-light.png">
-    <img alt="Background Color Methods" src="img/3-bg-methods-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="images/3-bg-methods-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="images/3-bg-methods-light.png" />
+    <img alt="Background Color Methods" src="images/3-bg-methods-light.png" />
 </picture>
 
 The following are the different methods supported for setting the text background colors along with the corresponding `ConsoleColor` enum members.
@@ -108,9 +112,9 @@ Console.WriteLine("Home now felt distant; forest was home.".BgColor("#2c6").Colo
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/4-web-colors-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="img/4-web-colors-light.png">
-    <img alt="Web Colors" src="img/4-web-colors-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="images/4-web-colors-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="images/4-web-colors-light.png" />
+    <img alt="Web Colors" src="images/4-web-colors-light.png" />
 </picture>
 
 ## Text Styles
@@ -121,9 +125,9 @@ Console.WriteLine("The fox embraced nature's harmony.".Underline());
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/5-styles-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="img/5-styles-light.png">
-    <img alt="Text Styles" src="img/5-styles-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="images/5-styles-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="images/5-styles-light.png" />
+    <img alt="Text Styles" src="images/5-styles-light.png" />
 </picture>
 
 There are many text styles supported as listed below.
@@ -160,9 +164,9 @@ Console.WriteLine($"Forever, the {highlight("curious")} fox {highlight("thrived"
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/6-combinations-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="img/6-combinations-light.gif">
-    <img alt="Color and Style Combinations" src="img/6-combinations-light.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="images/6-combinations-dark.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="images/6-combinations-light.gif" />
+    <img alt="Color and Style Combinations" src="images/6-combinations-light.gif" />
 </picture>
 
 ## Notes
