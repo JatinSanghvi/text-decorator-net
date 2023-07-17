@@ -18,11 +18,10 @@ public static class TextDecorator
     /// <returns>True if initialization is successful; false otherwise.</returns>
     public static bool Activate(bool enableErrorLogging = false)
     {
-        IsEnabled =
-            RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
-            && !Console.IsOutputRedirected
+        IsEnabled = !Console.IsOutputRedirected
             && string.IsNullOrEmpty(Environment.GetEnvironmentVariable("NO_COLOR")) // https://no-color.org/
-            && PlatformWindows.SetConsoleOutputVirtualTerminalProcessing(enableErrorLogging);
+            && (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+                || PlatformWindows.SetConsoleOutputVirtualTerminalProcessing(enableErrorLogging));
 
         return IsEnabled;
     }
