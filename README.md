@@ -13,6 +13,10 @@
 
 [JatinSanghvi.TextDecorator](https://www.nuget.org/packages/JatinSanghvi.TextDecorator)
 
+## Sample Screenshot
+
+![Sample Screenshot](images/powershell7.gif)
+
 ## Text Colors
 
 > You will need to activate text decorator once in your application before calling any of its methods, else on certain consoles, the text decorations will not get applied.
