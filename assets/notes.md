@@ -33,4 +33,4 @@
 
 ## Creating NuGet Package
 
-- `dotnet pack .\source\TextDecorator --no-build --configuration Release --include-symbols`
+- `dotnet pack .\source\TextDecorator --configuration Release --include-symbols`

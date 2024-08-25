@@ -12,10 +12,10 @@
         https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices#package-metadata,
         https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets#pack-target)
     -->
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>Jatin Sanghvi</Authors>
     <Title>Text Decorator for .NET</Title>
-    <Description>Color and style your text on console.</Description>
+    <Description>Easiest way to color and style text in your console applications.</Description>
     <Copyright>Copyright (c) Jatin Sanghvi. All rights reserved.</Copyright>
     <PackageProjectUrl>https://github.com/JatinSanghvi/text-decorator-net/</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>

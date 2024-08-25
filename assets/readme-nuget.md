@@ -2,7 +2,7 @@
 
 ![Text Decorator for .NET logo](https://raw.githubusercontent.com/JatinSanghvi/text-decorator-net/main/images/logo-light.png)
 
-An elegant way to color and style text in your console applications.
+Easiest way to color and style text in your console applications.
 
 ## Sample Screenshot
 

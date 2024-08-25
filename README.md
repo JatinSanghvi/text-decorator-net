@@ -6,7 +6,7 @@
         <source media="(prefers-color-scheme: light)" srcset="images/logo-light.png" />
         <img alt="Text Decorator for .NET logo" src="images/logo-light.png" />
     </picture>
-    <p>An elegant way to color and style text in your console applications.</p>
+    <p>Easiest way to color and style text in your console applications.</p>
 </div>
 
 ## NuGet Package
